@@ -12,4 +12,9 @@ public class APIController {
     public double kilogram(@RequestParam double stone) {
         return stone * 6.35;
     }
+
+    @GetMapping("/api/gram")
+    public double gram(@RequestParam double ounce) {
+        return ounce * 28.35;
+    }
 }
