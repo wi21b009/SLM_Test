@@ -12,4 +12,10 @@ class APIControllerTest {
         assertEquals(1*6.35, apiController.kilogram(1.0));
     }
 
+    @Test
+    void GramTest() {
+        assertEquals(1*28.35,
+                apiController.gram(1.0));
+    }
+
 }
